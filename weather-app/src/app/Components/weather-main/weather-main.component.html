@@ -1,4 +1,4 @@
-<div id="divWeatherMain"> 
+<div id="weatherMain"> 
     <div *ngIf="weatherData.isDay" class="weatherWidgetRow">
         <i class="fas fa-3x fa-sun sun"></i>  
     </div>   
@@ -14,3 +14,9 @@
     <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;">{{weatherData.name}}</div>
     <div class="weatherWidgetRow" style="font-size: 12px;">Humidity: {{weatherData.main.humidity}}%</div>
 </div>
+<br>
+<div id="InputField">
+    <input class="" type="text" [(ngModel)]="City" >
+    <button class="" (click)="searchCity()">Search</button>
+</div>
+
